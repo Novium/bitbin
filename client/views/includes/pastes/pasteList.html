@@ -1,0 +1,15 @@
+<template name="pasteList">
+  {{#each pastes}}
+  <div class="row">
+    <div class="col-sm-10">
+      {{title}}
+    </div>
+    <div class="col-sm-2">
+      <div class="text-right">
+        <span class="delbtn btn btn-danger btn-xs">{{#quickRemoveButton collection="Pastes" _id=_id}}x{{/quickRemoveButton}}</span>
+      </div>
+    </div>
+  </div>
+  {{{highlight}}}
+  {{/each}}
+</template>

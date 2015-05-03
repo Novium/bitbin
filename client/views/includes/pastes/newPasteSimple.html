@@ -1,0 +1,11 @@
+<template name="newPasteSimple">
+  {{#autoForm collection="Pastes" id="insertPasteForm" type="insert"}}
+  <fieldset>
+    <legend>New Paste // Simple</legend>
+    {{> afQuickField name="title"}}
+    {{> afQuickField name="content" rows=15}}
+    {{> afQuickField name="code"}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
+</template>

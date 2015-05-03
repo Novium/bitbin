@@ -1,0 +1,84 @@
+<template name="home">
+  {{#unless currentUser}}
+  <!-- NOT LOGGED IN -->
+  <div class="container">
+    <div class="well">
+      <h1>welcome to bitbin</h1>
+
+      <!-- First row -->
+
+      <div class="row">
+        <div class="col-sm-4 about-row">
+          <div class="about-wrap">
+            <div class="heading">
+              <span class="value">01</span>
+              <h2>what?</h2>
+            </div>
+            <p>bitbin is an easy to use service for saving and sharing everything from text to code</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 about-row">
+          <div class="about-wrap">
+            <div class="heading">
+              <span class="value">02</span>
+              <h2>how?</h2>
+            </div>
+            <p>to save something on bitbin you just need to follow the simple registration process and click on create, there you will be able to choose everything from the expiration date to adding password protection</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 about-row">
+          <div class="about-wrap">
+            <div class="heading">
+              <span class="value">03</span>
+              <h2>why?</h2>
+            </div>
+            <p>we've all been in a situation where we need to share some text securely and fast, and that's exactly why bitpaste was created</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row -->
+
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-2 about-row">
+          <div class="about-wrap">
+            <div class="heading">
+              <span class="value">04</span>
+              <h2>privacy?</h2>
+            </div>
+            <p>your privacy matters to us, so we will never distribute your information to any third-party and we will follow Swedish data protection law and our servers are located in Sweden. What we're trying to say is that your information will remain yours.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-4 about-row">
+          <div class="about-wrap">
+            <div class="heading">
+              <span class="value">05</span>
+              <h2>tooooodooo</h2>
+            </div>
+            <p>random random text lorem ipsum etc. I seriously have no idea what to write sooo yeeeh nothing to see here test test test</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to action -->
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 sign-up-cta">
+          <h2>sign up now</h2>
+          <div><a href="/login"><button type="button" class="btn btn-primary btn-lg btn-block">register</button></a></div>
+          <div><button type="button" class="btn btn-default btn-xs btn-block">sign in</button></div>
+          <div>
+            <p>did we forget to mention that it's ad-free?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <!-- LOGGED IN -->
+  {{> dashboard}}
+  {{/unless}}
+</template>
