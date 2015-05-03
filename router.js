@@ -2,34 +2,18 @@ Router.configure({
   layoutTemplate: 'layout'
 });
 
-
-Router.route('/', function () {
-  this.render('home');
+Router.route('home', {
+  path: '/'
 });
 
-Router.route('/login', function () {
-  this.render('login');
+Router.route('login', {
+  path: '/login'
 });
 
-Router.route('/show', function () {
-  this.render('show');
+Router.route('show', {
+  path: '/show'
 });
 
-
-
-AccountsTemplates.configure({
-    // Behaviour
-    enablePasswordChange: true,
-
-    // Appearance
-    showForgotPasswordLink: true,
-    showReCaptcha: true,
-
-    // Privacy Policy and Terms of Use
-    privacyUrl: 'privacy',
-    termsUrl: 'terms-of-use',
-
-    // Redirects
-    homeRoutePath: '/',
-    redirectTimeout: 4000
+Router.route('new', {
+  path: '/new'
 });
