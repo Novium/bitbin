@@ -11,7 +11,10 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">home</a></li>
+        <li><a href="{{pathFor route='home'}}">home</a></li>
+        {{#if currentUser}}
+        <li><a href="{{pathFor route='new'}}">new</a></li>
+        {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#unless currentUser}}
