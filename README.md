@@ -27,3 +27,12 @@ Meteor.settings = {
   }
 }
 ```
+
+## Contributing
+A few pointers whilst contributing to the project (which is entirely optional).
+
+You can use any preferred coding style, it doesn't really matter for me and if I find it overly annoying I will change it to my own style which I've developed over the years.
+
+Otherwise, do anything you want, add any feature, we can always find a place for it.
+
+Remember that all your work will be licensed under the MIT license and that copyright infringement is illegal etc.... You get the gist.
